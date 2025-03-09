@@ -1,5 +1,5 @@
 const socialMediaLinks = {
-    github: "https://github.com/AdityaPachupate55",
+    github: "https://github.com/AdityaPachupate",
     linkedin: "https://www.linkedin.com/feed/",
     twitter: "https://x.com/ADITYAPACHUAPTE",
     instagram: "https://www.instagram.com/aditya_pachupate/",
