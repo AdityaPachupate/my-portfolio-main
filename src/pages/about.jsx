@@ -2,6 +2,7 @@ import Screen from "../Layouts/Screen";
 import Title from "../Component/Title";
 import SelectedCertificate from "./../Component/Certificates";
 import { IoCodeSlash , IoDocumentText  } from "react-icons/io5";
+import Experience from "../Component/Experience";
 // import socialMediaLinks from "../../links";
 
 const About = () => {
@@ -17,8 +18,8 @@ const About = () => {
           Follow me on X
         </a> */}
       </div>
-      <div className=" md:px-1.5">
-        <div className=" mt-6 md:mt-0">
+      <div className=" md:px-1.5 ">
+        <div className=" mt-6 md:mt-0 ">
           <div className=" flex flex-row gap-2 items-center justify-between mt-2 ">
             <div className=" text-start w-full hidden md:block  ">
               <ul className="">
@@ -90,7 +91,7 @@ const About = () => {
           </div>
 
           <div className=" ">
-            <div className=" my-4  md:text-justify text-start mt-6 ">
+            <div className="p- my-7 p-5 md:text-justify text-start mt-6 border-2 border-gray-300 dark:border-white/30 rounded-lg hover:border-gray-400 dark:hover:border-white/50 transition-colors">
               Hey, I'm Aditya Pachupate, a fouth-year student exploring the field
               of engineering. I live in Karad, India, and I'm a full-stack
               developer who loves building things and learning something new
@@ -112,14 +113,15 @@ const About = () => {
             
           </div>
         </div>
+        <Experience />
         {/* <SelectedCertificate /> */}
-
-        <div>
+        
+        <div className="mt-10">
           <div className="flex flex-row justify-start mt-7 md:mt-5">
             <Title title=" Days I code" icon={<IoCodeSlash />} />
           </div>
 
-          <div className=" p-4  ">
+          <div className=" p-4 ">
             <div className="overflow-x-scroll">
               <div className="md:w-full w-[850px] ">
                 <img
