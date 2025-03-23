@@ -1,7 +1,7 @@
 export const EXPERIENCES = [
   {
     year: "Feb 2025 - Present",
-    role: "Fullstack developer",
+    role: "Intern - Fullstack developer",
     company: "Cognizant Technology solutions",
     description: `Developing web applications using C#, .NET Core, MVC, and Web API. Working with SQL databases for efficient data management. Collaborating in Agile teams to build scalable applications.`,
     technologies: [".Net Core", "SQL server"],
