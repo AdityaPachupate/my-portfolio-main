@@ -4,6 +4,7 @@ import Highlights from "../Component/highlights"
 import Intro from "../Component/Intro"
 import Screen from "../Layouts/Screen"
 import Summary from "../Component/Summary"
+import Experience from "../Component/Experience"
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <Summary />
       <Skills />
       <SelectedProjects />
-      <Highlights />
+      {/* <Highlights /> */}
+      <Experience />
     </Screen>
   )
 }
