@@ -4,6 +4,7 @@ import CompScreen from "../Layouts/CompScreen";
 import Title from "./Title";
 import socialMediaLinks from "../../links";
 
+
 const Highlights = () => {
   return (
     <CompScreen>
@@ -12,28 +13,7 @@ const Highlights = () => {
         <div className="border-b-2 dark:border-white/30 "></div>
         <div className=" divide-y-2 dark:divide-white/30 ">
           <div>
-            <div className=" py-4 md:text-justify text-start  ">
-              I'm currently on a 100 Days of Code journey, which I started on
-              Feb 1, 2025 . Every day, I'm learning something new in both DSA
-              and Development . If you'd like to follow my progress, feel free
-              to follow me on{" "}
-              <a
-                href={socialMediaLinks.twitter}
-                target="_blank"
-                className="text-blue-500 font-semibold font-sans hover:underline cursor-pointer"
-              >
-                Twitter
-              </a>
-              . You can also check my overall progress in this{" "}
-              <a
-                href={socialMediaLinks.github}
-                target="_blank"
-                className="text-blue-500 font-semibold font-sans hover:underline cursor-pointer"
-              >
-                Repository
-              </a>
-              .
-            </div>
+           
           </div>
           <div>
             <div className=" py-4 md:text-justify text-start ">
