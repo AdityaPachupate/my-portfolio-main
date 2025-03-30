@@ -1,4 +1,4 @@
-const socialMediaLinks = {
+export const socialMediaLinks = {
     github: "https://github.com/AdityaPachupate",
     linkedin: "https://www.linkedin.com/feed/",
     twitter: "https://x.com/ADITYAPACHUAPTE",
@@ -8,7 +8,6 @@ const socialMediaLinks = {
 };
 
 export const resume = {
-    resumeDriveLink :"https://drive.google.com/file/d/1xESongoZi-xckAUGvN2VM_PGnAjxuW_c/view?usp=sharing",
-}
+    resumeDriveLink: "https://drive.google.com/file/d/1xESongoZi-xckAUGvN2VM_PGnAjxuW_c/view?usp=sharing",
+};
 
-export default {socialMediaLinks,resume};

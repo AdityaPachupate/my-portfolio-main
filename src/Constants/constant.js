@@ -8,7 +8,7 @@ export const EXPERIENCES = [
   },
   {
     year: "July 2024 - June 2024",
-    role: "Embedded Developer",
+    role: "Intern Embedded Developer",
     company: "Amplifier electronics",
     description: `Worked on Intel MCS-51 microcontroller, developed embedded applications using C, and designed UI for system interfaces.`,
     technologies: ["C", "Proteus", "MCS-51", "Embedded systems"],

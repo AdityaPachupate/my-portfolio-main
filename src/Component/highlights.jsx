@@ -2,7 +2,7 @@
 import { GiTie , GiFeather  } from "react-icons/gi";
 import CompScreen from "../Layouts/CompScreen";
 import Title from "./Title";
-import socialMediaLinks from "../../links";
+import {socialMediaLinks} from "../Constants/links";
 
 
 const Highlights = () => {

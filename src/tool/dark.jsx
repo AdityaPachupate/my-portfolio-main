@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import LiveClockUpdate from "./Clock";
 import { GoDotFill } from "react-icons/go";
-import resume from "../../links";
-
+import { resume } from "../Constants/links";
 
 const Dark = ({ children }) => {
   const systemPrefersDark = window.matchMedia(
@@ -35,7 +34,7 @@ const Dark = ({ children }) => {
             <span className="animate-pulse underline font-serif cursor-pointer text-pink-500 border-theme-blue hover:text-gray-700 dark:hover:text-white">
               <a
                 target="_blank"
-                href={resume.resume.resumeDriveLink}
+                href={resume.resumeDriveLink}
                 rel="noopener noreferrer"
                 // download={true}
               >

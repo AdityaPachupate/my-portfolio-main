@@ -11,14 +11,14 @@ const SelectedProjects = () => {
       id: 1,
       img: "./project/MoodFlix.PNG",
       title: "MoodFlix",
-      status: "Running",
+      status: true,
       statusColor: "text-green-500",
       content:
         "TMoodflix is a modern movie discovery platform designed to provide a seamless and enjoyable experience for movie enthusiasts. Built with React.js, it offers a sleek and responsive interface for browsing and discovering movies.",
       url: "https://mood-flix-five.vercel.app/",
-      github: "https://github.com/AdityaPachupate55/MoodFlix",
+      github: "https://github.com/AdityaPachupate/MoodFlix",
       skill: ["ReactJS", "Javascript", "Tailwind", ],
-      // preview: "./preview/dailycrimes.mp4",
+     
     },
     
   ]

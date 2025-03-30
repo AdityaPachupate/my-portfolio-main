@@ -3,7 +3,7 @@ import Title from "../Component/Title";
 import SelectedCertificate from "./../Component/Certificates";
 import { IoCodeSlash , IoDocumentText  } from "react-icons/io5";
 import Experience from "../Component/Experience";
-// import socialMediaLinks from "../../links";
+import {resume} from "../Constants/links";
 
 const About = () => {
   return (
@@ -75,7 +75,7 @@ const About = () => {
                   </i>Get my Resume {" "}
                   <a
                     target="_blank"
-                    href="https://drive.google.com/file/d/1BxlIkQC34Nzx4Z_fuQ65QMv17_QrF5BN/view?usp=sharing"
+                    href={resume.resumeDriveLink}
                     rel="noopener noreferrer"
                     className="  font-semibold underline hover:text-blue-500"
                   >

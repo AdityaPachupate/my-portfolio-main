@@ -3,10 +3,9 @@ import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 import { FiLinkedin } from "react-icons/fi"
 import { LuGithub } from "react-icons/lu"
 import { SiBuymeacoffee, SiLeetcode ,SiGeeksforgeeks } from "react-icons/si"
+import {socialMediaLinks} from "../Constants/links.js"
 
-import socialMediaLinks from "../../links"
-
-const Intro = () => {
+const Intro = () => {   
   const links = [
     {
       href: `${socialMediaLinks.twitter}`,

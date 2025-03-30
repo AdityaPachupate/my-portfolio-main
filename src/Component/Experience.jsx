@@ -41,7 +41,7 @@ const Experience = () => {
                 {experience.technologies.map((tech, i) => (
                   <span
                   key={i}
-                  className="px-3 py-1 text-sm bg-[#333333] hover:bg-[#262525] border-2 border-gray-500 dark:border-white/30 rounded-lg hover:border-gray-600 dark:hover:border-white/50 transition-colors"
+                  className="flex flex-row gap-1 rounded-md justify-center items-center font-medium w-fit px-2 dark:bg-white/30 shadow shadow-gray-200 border-2 border-gray-200 dark:shadow-none dark:border-white/20 hover:bg-gray-200 dark:hover:bg-white/20 cursor-pointer transition-all"
                 >
                   {tech}
                 </span>

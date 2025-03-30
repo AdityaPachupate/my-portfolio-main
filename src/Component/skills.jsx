@@ -1,4 +1,3 @@
-
 import { DiJavascript } from "react-icons/di";
 import { FaCss3Alt, FaGitAlt, FaGithub } from "react-icons/fa6";
 import { IoLogoNodejs } from "react-icons/io5";
@@ -8,7 +7,7 @@ import {
   RiNextjsLine,
   RiReactjsLine,
   RiTailwindCssFill,
-  RiHtml5Fill
+  RiHtml5Fill,
 } from "react-icons/ri";
 import {
   SiExpress,
@@ -17,42 +16,51 @@ import {
   SiPostman,
   SiShadcnui,
   SiVercel,
-  SiMysql 
+  SiMysql,
 } from "react-icons/si";
 import {
   TbBrandCpp,
   TbBrandFramerMotion,
   TbBrandTypescript,
   TbHexagonLetterC,
+  TbBrandCSharp
 } from "react-icons/tb";
+import { PiFileCSharpBold } from "react-icons/pi";
+import { DiDotnet } from "react-icons/di";
 import { VscTerminalLinux, VscTools } from "react-icons/vsc";
 import CompScreen from "../Layouts/CompScreen";
 import Title from "./Title";
+
 const Skills = () => {
   const skills = [
+    //  Frontend Development
     { id: 1, icon: <RiHtml5Fill />, text: "HTML" },
     { id: 2, icon: <FaCss3Alt />, text: "CSS" },
-    // { id: 2, icon: <RiNextjsLine />, text: "NextJs" },
-    { id: 4, icon: <DiJavascript />, text: "JavaScript" },
-    // { id: 4, icon: <TbBrandTypescript />, text: "TypeScript" },
-    { id: 3, icon: <RiReactjsLine />, text: "ReactJs" },
-    { id: 5, icon: <RiTailwindCssFill />, text: "Tailwind" },
-    // { id: 6, icon: <SiShadcnui />, text: "shadcn" },
-    // { id: 7, icon: <TbBrandFramerMotion />, text: "Framer Motion" },
-    // { id: 8, icon: <SiGreensock />, text: "GSAP" },
-    { id: 9, icon: <IoLogoNodejs />, text: "NodeJS" },
-    { id: 10, icon: <SiExpress />, text: "ExpressJS" },
-    { id: 11, icon: <SiPostman />, text: "Postman" },
-    // { id: 12, icon: <BiLogoPostgresql />, text: "PostgreSQL" },
-    { id: 13, icon: <SiMongodb />, text: "MongoDB" },
-    { id: 13, icon: <TbBrandMysql />, text: "MySQL" },
-    { id: 14, icon: <FaGitAlt />, text: "Git" },
-    { id: 15, icon: <FaGithub />, text: "GitHub" },
-    // { id: 16, icon: <RiJavaLine />, text: "Java" },
-    { id: 17, icon: <TbHexagonLetterC />, text: "C" },
-    { id: 18, icon: <TbBrandCpp />, text: "C++" },
-    // { id: 19, icon: <VscTerminalLinux />, text: "Linux" },
-    { id: 20, icon: <SiVercel />, text: "Vercel" },
+    { id: 3, icon: <DiJavascript />, text: "JavaScript" },
+    { id: 4, icon: <RiReactjsLine />, text: "ReactJS" },
+    { id: 5, icon: <RiTailwindCssFill />, text: "TailwindCSS" },
+  
+    //  Backend Development
+    { id: 6, icon: <IoLogoNodejs />, text: "Node.js" },
+    { id: 7, icon: <SiExpress />, text: "Express.js" },
+  
+    //  Database & API Tools
+    { id: 8, icon: <SiMongodb />, text: "MongoDB" },
+    { id: 9, icon: <TbBrandMysql />, text: "MySQL" },
+    { id: 10, icon: <SiPostman />, text: "Postman" },
+  
+    //  Version Control & Deployment
+    { id: 11, icon: <FaGitAlt />, text: "Git" },
+    { id: 12, icon: <FaGithub />, text: "GitHub" },
+    { id: 13, icon: <SiVercel />, text: "Vercel" },
+  
+    //  Programming Languages
+    { id: 14, icon: <TbHexagonLetterC />, text: "C" },
+    { id: 15, text: "C++" },
+    { id: 16, icon: <PiFileCSharpBold />, text: "C#" },
+  
+    //  .NET Stack
+    { id: 17, icon: <DiDotnet />, text: ".NET" },
   ];
 
   return (
