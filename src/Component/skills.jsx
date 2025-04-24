@@ -17,50 +17,54 @@ import {
   SiShadcnui,
   SiVercel,
   SiMysql,
+  SiTypescript
 } from "react-icons/si";
 import {
   TbBrandCpp,
   TbBrandFramerMotion,
-  TbBrandTypescript,
   TbHexagonLetterC,
   TbBrandCSharp
 } from "react-icons/tb";
+
 import { PiFileCSharpBold } from "react-icons/pi";
-import { DiDotnet } from "react-icons/di";
+import { DiDotnet , DiAngularSimple ,DiMsqlServer  } from "react-icons/di";
 import { VscTerminalLinux, VscTools } from "react-icons/vsc";
 import CompScreen from "../Layouts/CompScreen";
 import Title from "./Title";
 
 const Skills = () => {
   const skills = [
-    //  Frontend Development
+    // ========== Frontend Development ==========
     { id: 1, icon: <RiHtml5Fill />, text: "HTML" },
     { id: 2, icon: <FaCss3Alt />, text: "CSS" },
     { id: 3, icon: <DiJavascript />, text: "JavaScript" },
-    { id: 4, icon: <RiReactjsLine />, text: "ReactJS" },
+    { id: 4, icon: <SiTypescript />, text: "TypeScript" },
     { id: 5, icon: <RiTailwindCssFill />, text: "TailwindCSS" },
+    { id: 6, icon: <RiReactjsLine />, text: "ReactJS" },
+    { id: 7, icon: <DiAngularSimple />, text: "Angular" },
   
-    //  Backend Development
-    { id: 6, icon: <IoLogoNodejs />, text: "Node.js" },
-    { id: 7, icon: <SiExpress />, text: "Express.js" },
+    // ========== Backend Development ==========
+    { id: 8, icon: <IoLogoNodejs />, text: "Node.js" },
+    { id: 9, icon: <SiExpress />, text: "Express.js" },
   
-    //  Database & API Tools
-    { id: 8, icon: <SiMongodb />, text: "MongoDB" },
-    { id: 9, icon: <TbBrandMysql />, text: "MySQL" },
-    { id: 10, icon: <SiPostman />, text: "Postman" },
+    // ========== Database & API Tools ==========
+    { id: 10, icon: <SiMongodb />, text: "MongoDB" },
+    { id: 11, icon: <TbBrandMysql />, text: "MySQL" },
+    { id: 12, icon: <DiMsqlServer />, text: "SQL Server" },
+    { id: 12, icon: <SiPostman />, text: "Postman" },
   
-    //  Version Control & Deployment
-    { id: 11, icon: <FaGitAlt />, text: "Git" },
-    { id: 12, icon: <FaGithub />, text: "GitHub" },
-    { id: 13, icon: <SiVercel />, text: "Vercel" },
+    // ========== Version Control & Deployment ==========
+    { id: 13, icon: <FaGitAlt />, text: "Git" },
+    { id: 14, icon: <FaGithub />, text: "GitHub" },
+    { id: 15, icon: <SiVercel />, text: "Vercel" },
   
-    //  Programming Languages
-    { id: 14, icon: <TbHexagonLetterC />, text: "C" },
-    { id: 15, text: "C++" },
-    { id: 16, icon: <PiFileCSharpBold />, text: "C#" },
+    // ========== Programming Languages ==========
+    { id: 16, icon: <TbHexagonLetterC />, text: "C" },
+    { id: 17, text: "C++" },
+    { id: 18, icon: <PiFileCSharpBold />, text: "C#" },
   
-    //  .NET Stack
-    { id: 17, icon: <DiDotnet />, text: ".NET" },
+    // ========== .NET Stack ==========
+    { id: 19, icon: <DiDotnet />, text: ".NET" },
   ];
 
   return (
