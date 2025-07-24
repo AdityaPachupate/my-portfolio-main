@@ -86,7 +86,7 @@ const About = () => {
             </div>
             <img
               className=" border md:size-40 md:scale-90  rounded-xl md:rounded-full hover:grayscale  transition-all delay-100"
-              src="/IMG/dp2.jpg"
+              src="/IMG/dp3.jpg"
             />
           </div>
 

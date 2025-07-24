@@ -40,7 +40,7 @@ const Intro = () => {
   return (
     <div className=" flex flex-row gap-3 items-center">
       <img
-        src="./IMG/dp2.jpg"
+        src="./IMG/dp3.jpg"
         className=" border md:size-40 size-32 rounded-full"
       />
       <div className=" flex flex-col">
