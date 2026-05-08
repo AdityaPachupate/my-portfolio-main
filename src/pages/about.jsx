@@ -54,9 +54,9 @@ const About = () => {
                       Tailwind CSS
                     </span>
                     ,{" "}
-                    <span className="text-blue-500 font-semibold">Node.js</span>
+                    <span className="text-blue-500 font-semibold">.NET Core</span>
                     , and{" "}
-                    <span className="text-blue-500 font-semibold">MongoDB</span>
+                    <span className="text-blue-500 font-semibold">SQL Server</span>
                     .
                   </span>
                 </li>
@@ -95,8 +95,8 @@ const About = () => {
               Hey, I'm Aditya Pachupate, a fouth-year student exploring the field
               of engineering. I live in Karad, India, and I'm a full-stack
               developer who loves building things and learning something new
-              every day from them. I mainly work with React with Javascript and
-              Tailwind for frontend development and NodeJS and MongoDB for
+              every day from them. I mainly work with React, Javascript, and
+              Tailwind for frontend development, and .NET Core and SQL Server for
               backend. I'm looking for opportunities in both web development and
               software engineering roles.
             </div>

@@ -9,6 +9,18 @@ const SelectedProjects = () => {
   const projects = [
     {
       id: 1,
+      img: "./project/crm.png",
+      title: "CRM Fullstack",
+      status: true,
+      statusColor: "text-green-500",
+      content:
+        "A production-grade Clinical CRM built with Vertical Slice Architecture and CQRS. Features predictive prefetching, optimistic UI updates, and offline resilience via IndexedDB. Implements enterprise-scale patterns including cascading lifecycle management and automated background jobs.",
+      url: "https://crm-client-7b3v.onrender.com/",
+      github: "https://github.com/AdityaPachupate/crm-fullstack",
+      skill: [".Net Core", "C#", "SQL Server", "React", "CQRS", "IndexedDB"],
+    },
+    {
+      id: 2,
       img: "./project/MoodFlix.PNG",
       title: "MoodFlix",
       status: true,
