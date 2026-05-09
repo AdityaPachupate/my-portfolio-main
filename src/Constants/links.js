@@ -8,6 +8,6 @@ export const socialMediaLinks = {
 };
 
 export const resume = {
-    resumeDriveLink: "https://drive.google.com/file/d/1xESongoZi-xckAUGvN2VM_PGnAjxuW_c/view?usp=sharing",
+    resumeDriveLink: "/Aditya_Pachupate_Resume.pdf",
 };
 

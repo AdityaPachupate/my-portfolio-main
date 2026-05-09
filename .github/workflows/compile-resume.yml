@@ -1,0 +1,32 @@
+name: Compile Resume
+
+on:
+  push:
+    paths:
+      - 'AdityaPachupate.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: AdityaPachupate.tex
+
+      - name: Move and rename PDF
+        run: |
+          mkdir -p public
+          mv AdityaPachupate.pdf public/Aditya_Pachupate_Resume.pdf
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/Aditya_Pachupate_Resume.pdf
+          git commit -m "[skip ci] Update resume PDF"
+          git push
