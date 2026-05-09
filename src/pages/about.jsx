@@ -1,7 +1,7 @@
 import Screen from "../Layouts/Screen";
 import Title from "../Component/Title";
 import SelectedCertificate from "./../Component/Certificates";
-import { IoCodeSlash , IoDocumentText  } from "react-icons/io5";
+import { IoDocumentText  } from "react-icons/io5";
 import Experience from "../Component/Experience";
 import {resume} from "../Constants/links";
 
@@ -23,63 +23,71 @@ const About = () => {
           <div className=" flex flex-row gap-2 items-center justify-between mt-2 ">
             <div className=" text-start w-full hidden md:block  ">
               <ul className="">
-                <li className=" flex flex-row gap-2 items-center">
-                  <i className="fa-solid fa-paper-plane"></i> Lives in{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/Karad"
-                    target="_blank"
-                    className=" font-semibold underline cursor-pointer hover:text-blue-500"
-                  >
-                    Karad, India.
-                  </a>
+                <li className=" flex flex-row gap-2 items-start">
+                  <i className="fa-solid fa-paper-plane mt-1"></i>
+                  <div>
+                    Lives in{" "}
+                    <a
+                      href="https://en.wikipedia.org/wiki/Karad"
+                      target="_blank"
+                      className=" font-semibold underline cursor-pointer hover:text-blue-500"
+                    >
+                      Karad, India.
+                    </a>
+                  </div>
                 </li>
-                <li className=" flex flex-row gap-1 items-center">
-                  <i className="fa-solid fa-graduation-cap"></i>
-                  Bachelor of Technology in{" "}
-                  <span className="text-blue-500 font-semibold">
-                    Electronics and Telecommunication Engineering
-                  </span>
-                  {" "}(2025 Graduate).
-                </li>
-                <li className=" flex flex-row gap-2 items-center">
-                  <i className="fa-solid fa-screwdriver-wrench"></i>
-                  Primarily work with{" "}
-                  <span>
-                    <span className="text-blue-500 font-semibold">React</span>,{" "}
+                <li className=" flex flex-row gap-2 items-start">
+                  <i className="fa-solid fa-graduation-cap mt-1"></i>
+                  <div>
+                    B.Tech in{" "}
                     <span className="text-blue-500 font-semibold">
-                      .NET 8
+                      Electronics and Telecommunication Engineering
                     </span>
-                    ,{" "}
-                    <span className="text-blue-500 font-semibold">
-                      SQL Server
+                    {" "}(2025 Graduate).
+                  </div>
+                </li>
+                <li className=" flex flex-row gap-2 items-start">
+                  <i className="fa-solid fa-screwdriver-wrench mt-1"></i>
+                  <div>
+                    Primarily work with{" "}
+                    <span>
+                      <span className="text-blue-500 font-semibold">
+                        .NET 8
+                      </span>
+                      ,{" "}
+                      <span className="text-blue-500 font-semibold">
+                        SQL Server
+                      </span>
+                      , and{" "}
+                      <span className="text-blue-500 font-semibold">Microservices</span>
+                      .
                     </span>
-                    ,{" "}
-                    <span className="text-blue-500 font-semibold">Microservices</span>
-                    , and{" "}
-                    <span className="text-blue-500 font-semibold">Cloud Technologies</span>
-                    .
-                  </span>
+                  </div>
                 </li>
-                <li className=" flex flex-row gap-2 items-center">
-                  <i className="fa-solid fa-briefcase"></i>
-                  Programmer Analyst Trainee at <span className="text-blue-500 font-semibold">Cognizant</span>.
+                <li className=" flex flex-row gap-2 items-start">
+                  <i className="fa-solid fa-briefcase mt-1"></i>
+                  <div>
+                    Programmer Analyst Trainee at <span className="text-blue-500 font-semibold">Cognizant</span>.
+                  </div>
                 </li>
-                <li className=" flex flex-row gap-2 items-center">
-                  <i className="fa-solid fa-people-group"></i>
-                  Always open to collaborating on research or development.
+                <li className=" flex flex-row gap-2 items-start">
+                  <i className="fa-solid fa-people-group mt-1"></i>
+                  <div>Always open to collaborating on research or development.</div>
                 </li>
 
-                <li className=" flex flex-row gap-1 items-center">
-                  <i><IoDocumentText />
-                  </i>Get my Resume {" "}
-                  <a
-                    target="_blank"
-                    href={resume.resumeDriveLink}
-                    rel="noopener noreferrer"
-                    className="  font-semibold underline hover:text-blue-500"
-                  >
-                    Here
-                  </a>
+                <li className=" flex flex-row gap-2 items-start">
+                  <i className="mt-1"><IoDocumentText /></i>
+                  <div>
+                    Get my Resume{" "}
+                    <a
+                      target="_blank"
+                      href={resume.resumeDriveLink}
+                      rel="noopener noreferrer"
+                      className=" font-semibold underline hover:text-blue-500"
+                    >
+                      Here
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -118,38 +126,6 @@ const About = () => {
         <Experience />
         {/* <SelectedCertificate /> */}
         
-        <div className="mt-10">
-          <div className="flex flex-row justify-start mt-7 md:mt-5">
-            <Title title=" Days I code" icon={<IoCodeSlash />} />
-          </div>
-
-          <div className=" p-4 ">
-            <div className="overflow-x-scroll">
-              <div className="md:w-full w-[850px] ">
-                <img
-                  className="w-full h-auto"
-                  src="https://ghchart.rshah.org/008000/AdityaPachupate55"
-                  alt="Aditya's Github chart"
-                />
-              </div>
-            </div>
-
-            <div className="mt-10 flex flex-col md:flex-row gap-2 ">
-              <div className="border-[1px] border-gray-900 rounded-lg">
-                <img src="https://leetcard.jacoblin.cool/adityapachupate?height=350&theme=dark" />
-              </div>
-              <div className="border-[1px] border-gray-800 rounded-lg">
-                <a href="https://www.geeksforgeeks.org/user/adityapachupate/">
-                  <img
-                    src="https://gfgstatscard.vercel.app/adityapachupate"
-                    alt="GFG stats"
-                    
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </Screen>
   );
