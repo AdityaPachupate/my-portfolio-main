@@ -10,27 +10,38 @@ const SelectedProjects = () => {
     {
       id: 1,
       img: "./project/crm.png",
-      title: "CRM Fullstack",
+      title: "Production-Ready Clinical CRM",
       status: true,
       statusColor: "text-green-500",
       content:
-        "A production-grade Clinical CRM built with Vertical Slice Architecture and CQRS. Features predictive prefetching, optimistic UI updates, and offline resilience via IndexedDB. Implements enterprise-scale patterns including cascading lifecycle management and automated background jobs.",
+        "Engineered a high-performance CRM using Vertical Slice Architecture and CQRS (MediatR). Features predictive prefetching, optimistic UI, and offline resilience with IndexedDB. Includes structured logging (Serilog), automated background jobs, and health check endpoints.",
       url: "https://crm-client-m898.onrender.com/",
-      github: "https://github.com/AdityaPachupate/CRM-personal-copy",
-      skill: [".Net Core", "C#", "SQL Server", "React", "CQRS", "IndexedDB"],
+      github: "https://github.com/AdityaPachupate/crm-fullstack",
+      skill: [".NET 8", "React", "CQRS", "MediatR", "IndexedDB", "Serilog"],
     },
     {
       id: 2,
+      img: "./project/ecommerce.png",
+      title: "Full Stack E-commerce App",
+      status: true,
+      statusColor: "text-green-500",
+      content:
+        "Engineered a full-stack e-commerce platform using Angular and ASP.NET Core Web API. Implemented JWT-based authentication, role-based authorization, and a complete product catalog with EF Core and SQL Server.",
+      url: "",
+      github: "https://github.com/AdityaPachupate",
+      skill: [".NET Core", "Angular", "JWT", "EF Core", "SQL Server"],
+    },
+    {
+      id: 3,
       img: "./project/MoodFlix.PNG",
       title: "MoodFlix",
       status: true,
       statusColor: "text-green-500",
       content:
-        "TMoodflix is a modern movie discovery platform designed to provide a seamless and enjoyable experience for movie enthusiasts. Built with React.js, it offers a sleek and responsive interface for browsing and discovering movies.",
+        "Moodflix is a modern movie discovery platform built with React.js. It offers a sleek and responsive interface for browsing and discovering movies based on mood and categories.",
       url: "https://mood-flix-five.vercel.app/",
       github: "https://github.com/AdityaPachupate/MoodFlix",
-      skill: ["ReactJS", "Javascript", "Tailwind", ],
-     
+      skill: ["ReactJS", "Javascript", "Tailwind"],
     },
     
   ]
@@ -58,7 +69,7 @@ const SelectedProjects = () => {
       ))}
 
       <div className="flex justify-center mt-4">
-        <Link to="/project" whileTap={{ scale: 0.85 }} onClick={scrollToTop}>
+        <Link to="/project" onClick={scrollToTop}>
           <motion.div
             whileHover={{
               scale: 1.07,

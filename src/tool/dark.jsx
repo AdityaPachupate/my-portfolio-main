@@ -42,6 +42,16 @@ const Dark = ({ children }) => {
               </a>
             </span>
 
+            <span className="animate-pulse underline font-serif cursor-pointer text-pink-500 border-theme-blue hover:text-gray-700 dark:hover:text-white">
+              <a
+                target="_blank"
+                href="https://adityapachupateretrofolio.vercel.app/"
+                rel="noopener noreferrer"
+              >
+                Retro Folio
+              </a>
+            </span>
+
             <button
               className=" top-3 text-xl cursor-pointer text-gray-600 dark:text-white hover:text-theme-blue "
               onClick={toggleDarkMode}

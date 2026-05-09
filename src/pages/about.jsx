@@ -35,11 +35,11 @@ const About = () => {
                 </li>
                 <li className=" flex flex-row gap-1 items-center">
                   <i className="fa-solid fa-graduation-cap"></i>
-                  Pursuing a Bachelor’s degree in{" "}
+                  Bachelor of Technology in{" "}
                   <span className="text-blue-500 font-semibold">
                     Electronics and Telecommunication Engineering
                   </span>
-                  .
+                  {" "}(2025 Graduate).
                 </li>
                 <li className=" flex flex-row gap-2 items-center">
                   <i className="fa-solid fa-screwdriver-wrench"></i>
@@ -47,23 +47,22 @@ const About = () => {
                   <span>
                     <span className="text-blue-500 font-semibold">React</span>,{" "}
                     <span className="text-blue-500 font-semibold">
-                      Javascript
+                      .NET 8
                     </span>
                     ,{" "}
                     <span className="text-blue-500 font-semibold">
-                      Tailwind CSS
+                      SQL Server
                     </span>
                     ,{" "}
-                    <span className="text-blue-500 font-semibold">.NET Core</span>
+                    <span className="text-blue-500 font-semibold">Microservices</span>
                     , and{" "}
-                    <span className="text-blue-500 font-semibold">SQL Server</span>
+                    <span className="text-blue-500 font-semibold">Cloud Technologies</span>
                     .
                   </span>
                 </li>
                 <li className=" flex flex-row gap-2 items-center">
                   <i className="fa-solid fa-briefcase"></i>
-                  Open to new opportunities and freelancing. Any support is
-                  appreciated!
+                  Programmer Analyst Trainee at <span className="text-blue-500 font-semibold">Cognizant</span>.
                 </li>
                 <li className=" flex flex-row gap-2 items-center">
                   <i className="fa-solid fa-people-group"></i>
@@ -92,13 +91,16 @@ const About = () => {
 
           <div className=" ">
             <div className="p- my-7 p-5 md:text-justify text-start mt-6 border-2 border-gray-300 dark:border-white/30 rounded-lg hover:border-gray-400 dark:hover:border-white/50 transition-colors">
-              Hey, I'm Aditya Pachupate, a fouth-year student exploring the field
-              of engineering. I live in Karad, India, and I'm a full-stack
-              developer who loves building things and learning something new
-              every day from them. I mainly work with React, Javascript, and
-              Tailwind for frontend development, and .NET Core and SQL Server for
-              backend. I'm looking for opportunities in both web development and
-              software engineering roles.
+              Hey, I'm Aditya Pachupate, an Electronics and Telecommunication Engineering graduate (2025) with a strong passion for software development. I'm currently working as a Programmer Analyst Trainee at Cognizant, specializing in Full Stack .NET development. I love building scalable things and learning new technologies every day. I mainly work with React and Angular for frontend, and .NET 8, gRPC, and Microservices for backend.
+              {" "}
+              <a
+                href="https://adityapachupateretrofolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-blue-500 hover:underline"
+              >
+                Switch to Retro Folio
+              </a>
             </div>
             {/* <div className=" my-4  md:text-justify text-start ">
               With a strong foundation in various technologies, I have

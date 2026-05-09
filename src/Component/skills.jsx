@@ -17,7 +17,9 @@ import {
   SiShadcnui,
   SiVercel,
   SiMysql,
-  SiTypescript
+  SiTypescript,
+  SiPostgresql,
+  SiRedis
 } from "react-icons/si";
 import {
   TbBrandCpp,
@@ -46,12 +48,17 @@ const Skills = () => {
     // ========== Backend Development ==========
     { id: 8, icon: <IoLogoNodejs />, text: "Node.js" },
     { id: 9, icon: <SiExpress />, text: "Express.js" },
+    { id: 20, text: "gRPC" },
+    { id: 21, text: "Microservices" },
+    { id: 22, text: "CQRS" },
   
     // ========== Database & API Tools ==========
     { id: 10, icon: <SiMongodb />, text: "MongoDB" },
     { id: 11, icon: <TbBrandMysql />, text: "MySQL" },
     { id: 12, icon: <DiMsqlServer />, text: "SQL Server" },
-    { id: 12, icon: <SiPostman />, text: "Postman" },
+    { id: 23, icon: <SiPostgresql />, text: "Postgres" },
+    { id: 24, icon: <SiRedis />, text: "Redis" },
+    { id: 25, icon: <SiPostman />, text: "Postman" },
   
     // ========== Version Control & Deployment ==========
     { id: 13, icon: <FaGitAlt />, text: "Git" },
@@ -64,7 +71,8 @@ const Skills = () => {
     { id: 18, icon: <PiFileCSharpBold />, text: "C#" },
   
     // ========== .NET Stack ==========
-    { id: 19, icon: <DiDotnet />, text: ".NET" },
+    { id: 19, icon: <DiDotnet />, text: ".NET 8" },
+    { id: 26, text: "EF Core" },
   ];
 
   return (

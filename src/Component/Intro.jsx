@@ -2,8 +2,9 @@ import { useEffect, useState } from "react"
 import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 import { FiLinkedin } from "react-icons/fi"
 import { LuGithub } from "react-icons/lu"
-import { SiBuymeacoffee, SiLeetcode ,SiGeeksforgeeks } from "react-icons/si"
-import {socialMediaLinks} from "../Constants/links.js"
+import { SiLeetcode ,SiGeeksforgeeks } from "react-icons/si"
+import { socialMediaLinks, resume } from "../Constants/links.js"
+import { HiOutlineDocumentText } from "react-icons/hi2"
 
 const Intro = () => {   
   const links = [
@@ -32,8 +33,8 @@ const Intro = () => {
       logo: <FaInstagram />,
     },
     {
-      href: "",
-      logo: <SiBuymeacoffee />,
+      href: `${resume.resumeDriveLink}`,
+      logo: <HiOutlineDocumentText />,
     },
   ]
 
@@ -48,8 +49,7 @@ const Intro = () => {
           <span className=" text-theme-blue">Aditya</span> Pachupate
         </div>
         <div className=" md:text-lg hidden md:block text-sm font-semibold font-bricolage text-gray-600 dark:text-white">
-          <span className=" text-pink-500">Electronics engineer</span> {" "}
-           turned out to be <span className=" text-pink-500">Full stack developer</span> 
+          <span className=" text-pink-500">Full stack developer</span> 
         </div>
         <div className=" md:hidden font-semibold">
           A <span className=" text-pink-500">Full-Stack Developer</span>.
@@ -58,7 +58,7 @@ const Intro = () => {
         <div className="flex flex-wrap gap-3 text-2xl mt-1">
           {links.map((item) => (
             <a
-              key={item.logo}
+              key={item.href}
               href={item.href}
               target="_blank"
               className="hover:text-theme-blue hover:scale-125 transition-transform delay-100"
