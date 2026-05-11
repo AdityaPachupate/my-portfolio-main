@@ -15,7 +15,7 @@ const SelectedProjects = () => {
       statusColor: "text-green-500",
       content:
         "Engineered a high-performance CRM using Vertical Slice Architecture and CQRS (MediatR). Features predictive prefetching, optimistic UI, and offline resilience with IndexedDB. Includes structured logging (Serilog), automated background jobs, and health check endpoints.",
-      url: "https://crm-client-m898.onrender.com/",
+      url: "https://crm-client-m898.onrender.com",
       github: "https://github.com/AdityaPachupate/crm-fullstack",
       skill: [".NET 8", "React", "CQRS", "MediatR", "IndexedDB", "Serilog"],
     },

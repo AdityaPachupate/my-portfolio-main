@@ -14,7 +14,7 @@ const Project = () => {
       statusColor: "text-green-500",
       content:
         "A production-grade Clinical CRM built with Vertical Slice Architecture and CQRS. Features predictive prefetching, optimistic UI updates, and offline resilience via IndexedDB. Implements enterprise-scale patterns including cascading lifecycle management and automated background jobs.",
-      url: "https://crm-client-m898.onrender.com/",
+      url: "https://crm-client-m898.onrender.com",
       github: "https://github.com/AdityaPachupate/CRM-personal-copy",
       skill: [".Net Core", "C#", "SQL Server", "React", "CQRS", "IndexedDB"],
     },
