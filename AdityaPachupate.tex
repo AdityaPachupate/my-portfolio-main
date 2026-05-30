@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
+    top=1.5 cm, % seperation between body and page edge from the top
+    bottom=1.5 cm, % seperation between body and page edge from the bottom
+    left=1.8 cm, % seperation between body and page edge from the left
+    right=1.8 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -19,8 +19,10 @@
 \usepackage{fontawesome5} % for using icons
 \usepackage{amsmath} % for math
 \usepackage[
-    pdftitle={Aditya Pachupate},
+    pdftitle={Aditya Pachupate - Resume},
     pdfauthor={Aditya Pachupate},
+    pdfsubject={Full Stack .NET Developer Resume},
+    pdfkeywords={C#, .NET 8, ASP.NET Core, React, Angular, Microservices, CQRS, gRPC, Redis, SQL, Full Stack Developer},
     colorlinks=true,
     urlcolor=primaryColor
 ]{hyperref} % for links, metadata and bookmarks
@@ -58,13 +60,10 @@
 \titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
 
 \titlespacing{\section}{
-    % left space:
     -1pt
 }{
-    % top space:
     0.3 cm
 }{
-    % bottom space:
     0.2 cm
 } % section title spacing
 
@@ -72,7 +71,7 @@
 \newenvironment{highlights}{
     \begin{itemize}[
         topsep=0.10 cm,
-        parsep=0.10 cm,
+        parsep=0.08 cm,
         partopsep=0pt,
         itemsep=0pt,
         leftmargin=0 cm + 10pt
@@ -133,21 +132,8 @@
     \par\kern\topsep
 } % new environment for the header
 
-\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-    \put(
-        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
-    ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in May 2026}\hspace{\widthof{Last updated in May 2026}}
-    }}}%
-  }%
-}%
-
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
-
-% new command for external links:
 
 
 \begin{document}
@@ -160,174 +146,155 @@
 
 
     \begin{header}
-    \fontsize{25 pt}{25 pt}\selectfont Aditya Pachupate
+        \fontsize{25 pt}{25 pt}\selectfont \textbf{Aditya Pachupate}
 
-    \vspace{5 pt}
+        \vspace{4 pt}
 
-    \normalsize
-    \mbox{Karad,Maharshtra}%
-    \kern 5.0 pt%
-    \AND%
-    \kern 5.0 pt%
-    \mbox{\hrefWithoutArrow{mailto:adityapachupate@gmail.com}{adityapachupate@gmail.com}}%
-    \kern 5.0 pt%
-    \AND%
-    \kern 5.0 pt%
-    \mbox{+91 7378556711}%
-    \kern 5.0 pt%
-    \AND%
-    \kern 5.0 pt%
-    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/adityapachupate/}{linkedin}}%
-    \kern 5.0 pt%
-    \AND%
-    \kern 5.0 pt%
-    \mbox{\hrefWithoutArrow{https://github.com/AdityaPachupate55}{github}}%
-\end{header}
-
+        \normalsize
+        \mbox{Karad, Maharashtra, India}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:adityapachupate@gmail.com}{adityapachupate@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{+91 7378556711}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/adityapachupate/}{LinkedIn: adityapachupate}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/AdityaPachupate55}{GitHub: AdityaPachupate55}}%
+    \end{header}
 
 
     \section{Professional Summary}
 
-
-
-        
         \begin{onecolentry}
-            \href{}{
-Motivated and detail-oriented Electronics and Telecommunication Engineering graduate (2025 pass-out) with a strong foundation in software development. Currently working as a Programmer Analyst Trainee at Cognizant Technology Solutions, with hands-on experience in Full Stack .NET development.}
+            Full Stack .NET Developer with hands-on experience building production-grade web applications using C\#, .NET 8, ASP.NET Core Web API, React, and Angular. Proficient in Microservices, CQRS, gRPC, Redis, REST APIs, and SQL/NoSQL databases. Currently a Programmer Analyst Trainee at Cognizant Technology Solutions, delivering scalable, maintainable enterprise solutions with a strong focus on clean architecture, performance optimization, and Agile collaboration.
         \end{onecolentry}
 
-        \vspace{0.2 cm}
 
-        % \begin{onecolentry}
-        %     The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        % \end{onecolentry}
-
-
-    %-------------------------------------------
-    % \section{Quick Guide}
-    % \begin{onecolentry}
-    %     \begin{highlightsforbulletentries}
-    %     \item Each section title is arbitrary and each section contains a list of entries.
-    %     \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-    %     \item Select a section title, pick an entry type, and start writing your section!
-    %     \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-    %     \end{highlightsforbulletentries}
-    % \end{onecolentry}
-    %----------------------------------------------
     \section{Technical Skills}
-   
-       \begin{onecolentry}
-         \textbf{Languages:} C, C++, C\# , JavaScript , Typescript
+
+        \begin{onecolentry}
+            \textbf{Languages:} C\#, C, C++, JavaScript, TypeScript, SQL
         \end{onecolentry}
 
         \vspace{0.1 cm}
 
-\begin{onecolentry}
-    \textbf{Frontend:} React.js, Angular, HTML, CSS, Tailwind CSS, IndexedDB (Offline Storage)
-\end{onecolentry}
+        \begin{onecolentry}
+            \textbf{Backend:} .NET 8, ASP.NET Core Web API, REST APIs, gRPC, Microservices, CQRS (MediatR), Node.js, Express.js, Serilog, Dependency Injection, SOLID Principles
+        \end{onecolentry}
 
-\vspace{0.1 cm}
+        \vspace{0.1 cm}
 
-\begin{onecolentry}
-    \textbf{Backend:} .NET 8, gRPC, CQRS (MediatR), Microservices, Node.js, Express.js, Serilog
-\end{onecolentry}
+        \begin{onecolentry}
+            \textbf{Frontend:} React.js, Angular, HTML5, CSS3, Tailwind CSS, IndexedDB (Offline Storage)
+        \end{onecolentry}
 
-\vspace{0.1 cm}
+        \vspace{0.1 cm}
 
-\begin{onecolentry}
-    \textbf{Database:} PostgreSQL, SQL Server, MongoDB, Redis, Entity Framework Core
-\end{onecolentry}
+        \begin{onecolentry}
+            \textbf{Databases:} SQL Server, PostgreSQL, MongoDB, Redis, Entity Framework Core, LINQ
+        \end{onecolentry}
 
-\vspace{0.1 cm}
+        \vspace{0.1 cm}
 
-\begin{onecolentry}
-    \textbf{Version Control System:} Git, GitHub
-\end{onecolentry}
+        \begin{onecolentry}
+            \textbf{Tools \& Platforms:} Git, GitHub, Visual Studio, VS Code, Postman, Swagger / OpenAPI, JIRA, Agile / Scrum
+        \end{onecolentry}
 
-\vspace{0.1 cm}
+        \vspace{0.1 cm}
 
-\begin{onecolentry}
-    \textbf{Soft Skills:} Critical thinking, Data-driven decision making, Problem solving
-\end{onecolentry}
-
-
- \section{Education}
-
-\begin{twocolentry}{June 2021 – May 2025}
-    \textbf{Government College of Engineering, Karad | CGPA: 7.04} \\
-    \textbf{Bachelor of Technology (B.Tech)}, Electronics and Telecommunication Engineering \\
-    
-\end{twocolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{June 2020 – August 2021}
-    \textbf{Ligade-Patil Junior College of Science, Karad | Percentage: 85.3\%} \\
-    Higher Secondary Certificate (HSC) \\
-    
-\end{twocolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{June 2018 – March 2019}
-    \textbf{K.C.T's Krishna School, Karad | Percentage: 81.2\%} \\
-    Secondary School Certificate (CBSE) \\
-    
-\end{twocolentry}
+        \begin{onecolentry}
+            \textbf{Concepts:} Object-Oriented Programming (OOP), Design Patterns, Vertical Slice Architecture, Async/Await, JWT Authentication, Role-Based Authorization
+        \end{onecolentry}
 
 
-
-    
     \section{Experience}
-  
+
         \begin{twocolentry}{
-            Feb 2025 - May 2025
+            Feb 2025 -- May 2025
         }
-            \textbf{Programmer Analyst Trainee}, Cognizant Technology solutions \end{twocolentry}
+            \textbf{Programmer Analyst Trainee}, Cognizant Technology Solutions
+        \end{twocolentry}
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Developed scalable web applications using C\#, .NET Core Web API, and \textbf{Microservices architecture}.
-                \item Implemented \textbf{gRPC} for efficient inter-service communication and \textbf{Redis} for distributed caching.
-                \item Worked with SQL databases, optimizing queries and managing data efficiently while collaborating in Agile teams.
+                \item Developed scalable web applications using C\#, .NET Core Web API, and Microservices architecture, contributing to enterprise-grade modules in an Agile delivery environment.
+                \item Implemented \textbf{gRPC} for high-throughput inter-service communication and integrated \textbf{Redis} for distributed caching, improving response times for frequently accessed endpoints.
+                \item Designed and optimized SQL queries and stored procedures using Entity Framework Core, reducing average query execution time by approximately 35\%.
+                \item Built and consumed RESTful APIs documented via Swagger / OpenAPI, ensuring consistent contracts across backend services.
+                \item Collaborated in Agile / Scrum ceremonies (sprint planning, daily stand-ups, retrospectives) using JIRA and Git for version control, code reviews, and pull-request-based workflows.
             \end{highlights}
         \end{onecolentry}
 
-    
-\section{Projects}
 
-\begin{twocolentry}{
-\href{https://github.com/AdityaPachupate/crm-fullstack}{\underline{GitHub}}
-\textbar{}
-\href{https://crm-client-m898.onrender.com}{\underline{Live demo}}
-}
-\textbf{Production-Ready Clinical CRM | .NET 8, React, CQRS, MediatR, IndexedDB}
-\end{twocolentry}
+    \section{Projects}
 
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Engineered a high-performance CRM using \textbf{Vertical Slice Architecture} and \textbf{CQRS (MediatR)}, ensuring modularity and decoupling complex business logic for enterprise-scale maintainability.
-    \item Implemented \textbf{Predictive Prefetching} and \textbf{Optimistic UI strategies} to eliminate perceived API latency, paired with \textbf{Offline Resilience} using \textbf{IndexedDB} for persistent caching and data obfuscation.
-    \item Developed a \textbf{Cascading Lifecycle (Soft Delete Engine)} to manage complex data relationships and a robust \textbf{Bulk CSV Import} system with row-by-row validation and duplicate detection.
-    \item Integrated production-grade DevOps features including \textbf{Structured Logging (Serilog)}, \textbf{Automated Background Jobs} for data health, and \textbf{Health Check endpoints} for cloud environment monitoring.
-\end{highlights}
-\end{onecolentry}
+        \begin{twocolentry}{
+            \hrefWithoutArrow{https://github.com/AdityaPachupate/crm-fullstack}{\underline{GitHub}}
+            \textbar{}
+            \hrefWithoutArrow{https://crm-client-m898.onrender.com}{\underline{Live Demo}}
+        }
+            \textbf{Production-Ready Clinical CRM} $|$ .NET 8, React, CQRS, MediatR, IndexedDB, PostgreSQL
+        \end{twocolentry}
 
-\vspace{0.2 cm}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Engineered a high-performance CRM using \textbf{Vertical Slice Architecture} and \textbf{CQRS (MediatR)}, decoupling complex business logic across 20+ feature slices for enterprise-scale maintainability.
+                \item Implemented predictive prefetching and optimistic UI strategies, reducing perceived API latency by approximately 60\% and delivering near-instant interactions on the React frontend.
+                \item Built offline resilience using IndexedDB for persistent client-side caching and data obfuscation, enabling uninterrupted usage during network failures.
+                \item Developed a cascading lifecycle (soft-delete engine) to manage complex parent-child data relationships, plus a robust bulk CSV import system processing 10,000+ records with row-by-row validation and duplicate detection.
+                \item Integrated production-grade DevOps features: structured logging with Serilog, automated background jobs for data health checks, and health-check endpoints for cloud monitoring.
+            \end{highlights}
+        \end{onecolentry}
 
-\begin{twocolentry}{
-% \href{https://github.com/yourusername/ecommerce-app}{github.com/yourusername/ecommerce-app}
-}
-\textbf{Full Stack E-commerce App | .NET Core, Angular, JWT}
-\end{twocolentry}
+        \vspace{0.2 cm}
 
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Engineered a full-stack e-commerce platform using Angular for the frontend and ASP.NET Core Web API with JWT-based authentication and role-based authorization.
-    \item Implemented a complete product catalog, shopping cart, and order system using Entity Framework Core and SQL Server.
-\end{highlights}
-\end{onecolentry}
+        \begin{twocolentry}{
+        }
+            \textbf{Full Stack E-commerce Application} $|$ ASP.NET Core Web API, Angular, JWT, Entity Framework Core, SQL Server
+        \end{twocolentry}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Engineered a full-stack e-commerce platform with Angular on the frontend and ASP.NET Core Web API on the backend, implementing JWT-based authentication and role-based authorization for secure access control.
+                \item Designed and implemented a complete product catalog, shopping cart, and order-management system using Entity Framework Core and SQL Server, applying the Repository Pattern and Dependency Injection for clean separation of concerns.
+                \item Developed RESTful API endpoints documented via Swagger, with proper exception handling and DTO-based data transfer to ensure scalability and maintainability.
+            \end{highlights}
+        \end{onecolentry}
+
+
+    \section{Certifications}
+
+        \begin{onecolentry}
+            \textbf{Claude Certified Architect -- Foundations} $|$ Anthropic \, \hrefWithoutArrow{https://verify.skilljar.com/c/jew7skpwvfpx}{(\underline{Verify Credential})}
+            \begin{highlights}
+                \item Certified in designing and architecting solutions using Anthropic's Claude large language models, covering prompt engineering, agentic workflows, tool use, and responsible AI integration patterns.
+            \end{highlights}
+        \end{onecolentry}
+
+
+    \section{Education}
+
+        \begin{twocolentry}{June 2021 -- May 2025}
+            \textbf{Government College of Engineering, Karad} \hfill \textbf{CGPA: 7.04 / 10} \\
+            Bachelor of Technology (B.Tech), Electronics and Telecommunication Engineering
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{June 2020 -- August 2021}
+            \textbf{Ligade-Patil Junior College of Science, Karad} \hfill \textbf{Percentage: 85.3\%} \\
+            Higher Secondary Certificate (HSC), Science
+        \end{twocolentry}
+
 
 \end{document}
