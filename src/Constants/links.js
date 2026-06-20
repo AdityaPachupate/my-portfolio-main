@@ -8,6 +8,6 @@ export const socialMediaLinks = {
 };
 
 export const resume = {
-    resumeDriveLink: "/Aditya_Pachupate_Resume.pdf",
+    resumeDriveLink: `/Aditya_Pachupate_Resume.pdf?v=${new Date().getTime()}`,
 };
 

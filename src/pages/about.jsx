@@ -20,8 +20,8 @@ const About = () => {
       </div>
       <div className=" md:px-1.5 ">
         <div className=" mt-6 md:mt-0 ">
-          <div className=" flex flex-row gap-2 items-center justify-between mt-2 ">
-            <div className=" text-start w-full hidden md:block  ">
+          <div className=" flex flex-col-reverse md:flex-row gap-6 items-center justify-between mt-2 ">
+            <div className=" text-start w-full ">
               <ul className="">
                 <li className=" flex flex-row gap-2 items-start">
                   <i className="fa-solid fa-paper-plane mt-1"></i>
