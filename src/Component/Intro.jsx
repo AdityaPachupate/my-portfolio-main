@@ -3,37 +3,37 @@ import { FaInstagram, FaXTwitter } from "react-icons/fa6"
 import { FiLinkedin } from "react-icons/fi"
 import { LuGithub } from "react-icons/lu"
 import { SiLeetcode ,SiGeeksforgeeks } from "react-icons/si"
-import { socialMediaLinks, resume } from "../Constants/links.js"
+import data from "../../portfolio-data.json"
 import { HiOutlineDocumentText } from "react-icons/hi2"
 
 const Intro = () => {   
   const links = [
     {
-      href: `${socialMediaLinks.twitter}`,
+      href: data.socialMedia.twitter,
       logo: <FaXTwitter />,
     },
     {
-      href: `${socialMediaLinks.github}`,
+      href: data.socialMedia.github,
       logo: <LuGithub />,
     },
     {
-      href: `${socialMediaLinks.linkedin}`,
+      href: data.socialMedia.linkedinProfile,
       logo: <FiLinkedin />,
     },
     {
-      href: `${socialMediaLinks.leetcode}`,
+      href: data.socialMedia.leetcode,
       logo: <SiLeetcode />,
     },
     {
-      href: `${socialMediaLinks.gfg}`,
+      href: data.socialMedia.gfg,
       logo: <SiGeeksforgeeks  />,
     },
     {
-      href: `${socialMediaLinks.instagram}`,
+      href: data.socialMedia.instagram,
       logo: <FaInstagram />,
     },
     {
-      href: `${resume.resumeDriveLink}`,
+      href: `${data.otherLinks.resumeDriveLink}?t=${Date.now()}`,
       logo: <HiOutlineDocumentText />,
     },
   ]

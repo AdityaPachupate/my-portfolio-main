@@ -135,6 +135,7 @@
 
 
 \begin{document}
+    \input{constants.tex}
     \newcommand{\AND}{\unskip
         \cleaders\copy\ANDbox\hskip\wd\ANDbox
         \ignorespaces
@@ -153,23 +154,23 @@
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:adityapachupate@gmail.com}{adityapachupate@gmail.com}}%
+        \mbox{\hrefWithoutArrow{mailto:\SocialEmail}{\SocialEmail}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{+91 7378556711}%
+        \mbox{\SocialPhone}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/adityapachupate/}{LinkedIn}}%
+        \mbox{\hrefWithoutArrow{\SocialLinkedin}{LinkedIn}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/AdityaPachupate55}{GitHub}}%
+        \mbox{\hrefWithoutArrow{\SocialGithub}{GitHub}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://adityapachupate.vercel.app/}{Portfolio}}%
+        \mbox{\hrefWithoutArrow{\SocialPortfolio}{Portfolio}}%
     \end{header}
 
 
@@ -245,9 +246,9 @@
     \section{Projects}
 
         \begin{twocolentry}{
-            \hrefWithoutArrow{https://github.com/AdityaPachupate/crm-fullstack}{\underline{GitHub}}
+            \hrefWithoutArrow{\CrmGithubProject}{\underline{GitHub}}
             \textbar{}
-            \hrefWithoutArrow{https://crm-client-m898.onrender.com}{\underline{Live Demo}}
+            \hrefWithoutArrow{\CrmUrl}{\underline{Live Demo}}
         }
             \textbf{Production-Ready Clinical CRM} $|$ .NET 8, React, CQRS (MediatR), PostgreSQL
         \end{twocolentry}

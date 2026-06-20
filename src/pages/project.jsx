@@ -1,7 +1,7 @@
 import ProjectBox from "../Component/projectbox"
 import Title from "../Component/Title"
 import Screen from "../Layouts/Screen"
-import {socialMediaLinks} from "../Constants/links"
+import data from "../../portfolio-data.json";
 
 
 const Project = () => {
@@ -13,9 +13,9 @@ const Project = () => {
       status: true,
       statusColor: "text-green-500",
       content:
-        "A production-grade Clinical CRM built with Vertical Slice Architecture and CQRS. Features predictive prefetching, optimistic UI updates, and offline resilience via IndexedDB. Implements enterprise-scale patterns including cascading lifecycle management and automated background jobs.",
-      url: "https://crm-client-m898.onrender.com",
-      github: "https://github.com/AdityaPachupate/CRM-personal-copy",
+        "Engineered a high-performance CRM using Vertical Slice Architecture and CQRS (MediatR), decoupling business logic across 20+ feature slices for enterprise-scale maintainability. Implemented predictive prefetching, reducing perceived API latency by 60% on the React frontend. Built a bulk CSV import system processing 10,000+ records with row-by-row validation, duplicate detection, and structured logging (Serilog).",
+      url: data.projectLinks.crmUrl,
+      github: data.projectLinks.crmGithubProject,
       skill: [".Net Core", "C#", "SQL Server", "React", "CQRS", "IndexedDB"],
     },
     {
@@ -26,8 +26,8 @@ const Project = () => {
       statusColor: "text-green-500",
       content:
         "TMoodflix is a modern movie discovery platform designed to provide a seamless and enjoyable experience for movie enthusiasts. Built with React.js, it offers a sleek and responsive interface for browsing and discovering movies.",
-      url: "https://mood-flix-five.vercel.app/",
-      github: "https://github.com/AdityaPachupate/MoodFlix",
+      url: data.projectLinks.moodFlixUrl,
+      github: data.projectLinks.moodFlixGithub,
       skill: ["ReactJS", "Javascript", "Tailwind", ],
       // preview: "./preview/dailycrimes.mp4",
     },
@@ -39,7 +39,7 @@ const Project = () => {
       <div className="flex flex-row justify-between items-center">
         <Title title="Projects" />
         <a
-          href="https://github.com/AdityaPachupate?tab=repositories"
+          href={data.otherLinks.githubRepositories}
           target="_blank"
           className=" font-medium text-blue-500 hover:underline tracking-tight"
         >

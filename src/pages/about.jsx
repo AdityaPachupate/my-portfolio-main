@@ -3,7 +3,7 @@ import Title from "../Component/Title";
 import SelectedCertificate from "./../Component/Certificates";
 import { IoDocumentText  } from "react-icons/io5";
 import Experience from "../Component/Experience";
-import {resume} from "../Constants/links";
+import data from "../../portfolio-data.json";
 
 const About = () => {
   return (
@@ -28,7 +28,7 @@ const About = () => {
                   <div>
                     Lives in{" "}
                     <a
-                      href="https://en.wikipedia.org/wiki/Karad"
+                      href={data.otherLinks.karadWiki}
                       target="_blank"
                       className=" font-semibold underline cursor-pointer hover:text-blue-500"
                     >
@@ -81,7 +81,7 @@ const About = () => {
                     Get my Resume{" "}
                     <a
                       target="_blank"
-                      href={resume.resumeDriveLink}
+                      href={`${data.otherLinks.resumeDriveLink}?t=${Date.now()}`}
                       rel="noopener noreferrer"
                       className=" font-semibold underline hover:text-blue-500"
                     >
@@ -102,7 +102,7 @@ const About = () => {
               Hey, I'm Aditya Pachupate, an Electronics and Telecommunication Engineering graduate (2025) with a strong passion for software development. I'm currently working as a Programmer Analyst Trainee at Cognizant, specializing in Full Stack .NET development. I love building scalable things and learning new technologies every day. I mainly work with React and Angular for frontend, and .NET 8, gRPC, and Microservices for backend.
               {" "}
               <a
-                href="https://adityapachupateretrofolio.vercel.app/"
+                href={data.otherLinks.retroFolio}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-blue-500 hover:underline"

@@ -1,4 +1,4 @@
-import { EXPERIENCES } from "../Constants/constant";
+import data from "../../portfolio-data.json";
 import { GiFeather } from "react-icons/gi";
 import CompScreen from "../Layouts/CompScreen";
 import Title from "./Title";
@@ -11,7 +11,7 @@ const Experience = () => {
       <div className="mt-3 text-base">
         <div className="border-b-2 dark:border-white/30"></div>
         <div className="divide-y-2 dark:divide-white/30">
-          {EXPERIENCES.map((experience, index) => (
+          {data.experiences.map((experience, index) => (
             <div key={index} className="py-4">
               {/* Flex container for role and date */}
               <div className="flex justify-between items-start">

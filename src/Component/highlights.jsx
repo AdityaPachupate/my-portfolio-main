@@ -2,7 +2,7 @@
 import { GiTie , GiFeather  } from "react-icons/gi";
 import CompScreen from "../Layouts/CompScreen";
 import Title from "./Title";
-import {socialMediaLinks} from "../Constants/links";
+import data from "../../portfolio-data.json";
 
 
 const Highlights = () => {
@@ -18,8 +18,7 @@ const Highlights = () => {
           <div>
             <div className=" py-4 md:text-justify text-start ">
             I started my journey as an <a
-                href={socialMediaLinks.github}
-                target="_blank"
+                href={data.socialMedia.linkedinProfile}                target="_blank"
                 className="text-blue-500 font-semibold font-sans hover:underline cursor-pointer"
               >
                 Embedded System Developer intern
